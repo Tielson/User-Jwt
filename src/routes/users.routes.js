@@ -8,5 +8,7 @@ const usersController = new UsersController()
 
 usersRouters.post("/" , usersController.create)
 usersRouters.put("/:id" , usersController.update)
+usersRouters.post("/check" , usersController.verify)
+
 
 module.exports = usersRouters
